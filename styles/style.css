@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Suwannaphum&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-family: Suwannaphum, Bahnschrift;
+	margin: auto;
+	width: 100%;
+	background-image: url("../images/Wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align:center;
+}
+.heading{
+	font-size:30px;
+}
+#content{
+	margin-top:20px;
+	width: 100%;
+}
+#picture{
+	width: 100%;
+}
+table{
+	text-align: center;
+}
+a:link{
+	text-decoration:solid;
+	color: white;
+}
+a:hover{
+	color: #FF9633;
+}
+a:visited{
+	color: #f0d137;
+	text-decoration: none;
+}
+a:visited:hover{
+	color: #ff5100;
+	text-decoration: none;
+}
+.anchor{
+	text-shadow: 0px 0px 0.4px #3a3a3a;
+	color: #f59519;
+}
+ol{
+	list-style-type: none;
+}
+
+#about, #skill, #exp, #other{
+	border-radius: 50px;
+	background-color: black;
+	opacity: 80%;
+	color: white;
+	margin: auto;
+	text-align: center;
+	width: 70%;
+	padding: 20px 20px 30px 20px;
+}
+#qual, #cert, #proj{
+	border-radius: 50px;
+	background-color: white;
+	opacity: 85%;
+	color: black;
+	margin: auto;
+	text-align: center;
+	width: 70%;
+	padding: 20px 20px 30px 20px;
+}
+#footer{
+	background-color: #494949;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	text-align: center;
+	color: rgba(236, 236, 236, 0.842);
+	padding: 10px 0 10px 0;
+	opacity: 80%;
+	margin: auto;
+}
+#footer-header{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+#footer-content{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.links{
+	width: 100%;
+}
+.linkedin{
+	min-height: 30px;
+}
+.email{
+	min-height: 30px;
+}
+.github{
+	min-height: 30px;
+}
+.linkedin img, .github img{
+	vertical-align:middle;
+}
+@media only screen and (max-width:800px) {
+    /* For mobile phones: */
+    table, #content, #qual, #cert, #proj, #about, #skill, #exp, #other{
+		padding: 0%;
+	    width: 100%;
+		border-radius: 0;
+    }
+	#qual, #cert, #proj, #about, #skill, #exp, #other{
+		padding: 10px 0px 10px 0;
+	}
+    #heading{
+	    font-size: medium;
+    }
+}
+@media only screen and (max-width: 630px) {
+	#footer-header{
+		margin-bottom: 5px;
+	}
+	#footer-content{
+		display:block;
+	}
+}
